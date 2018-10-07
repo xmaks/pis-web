@@ -1,7 +1,3 @@
-# pis-web
-
-> My priceless Nuxt.js project
-
 ## Build Setup
 
 ``` bash
