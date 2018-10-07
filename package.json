@@ -12,6 +12,10 @@
     "lint": "eslint --ext .js --ignore-path .gitignore .",
     "precommit": "npm run lint"
   },
+  "engines" : {
+    "node": "~10.11.0",
+    "npm" : "~6.4.1"
+  },
   "dependencies": {
     "cross-env": "^5.2.0",
     "nuxt": "^2.0.0",
