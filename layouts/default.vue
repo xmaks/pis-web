@@ -1,13 +1,11 @@
 <template>
-	<v-app dark>
-		<v-navigation-drawer app clipped v-model="drawer"></v-navigation-drawer>
-		<v-toolbar app clipped-left>
+	<v-app>
+		<v-toolbar dark app dense color="primary">
 			<v-toolbar-side-icon @click="drawer = !drawer"></v-toolbar-side-icon>
 		</v-toolbar>
+		<v-navigation-drawer app v-model="drawer" fixed></v-navigation-drawer>
 		<v-content>
-			<v-container fluid>
-				<nuxt></nuxt>
-			</v-container>
+			<nuxt></nuxt>
 		</v-content>
 		<v-footer app></v-footer>
 	</v-app>
@@ -17,7 +15,7 @@
 export default {
     data() {
       	return {
-        	drawer: true,
+        	drawer: false,
       	}
     }
 };

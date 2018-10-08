@@ -6,8 +6,6 @@ export const mutations = {
 
 export const actions = {
 	nuxtServerInit ({ commit }) {
-		// eslint-disable-next-line no-console,no-undef
-		console.log(process.env);
 		// eslint-disable-next-line no-undef
 		commit('setEnv', Object.assign({}, process.env));
 	},
